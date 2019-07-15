@@ -1,0 +1,99 @@
+/* CSS Document */
+
+.bg-black{background-color: rgba(14,14,14,1.00)}
+.carousel-caption{top:200px;}
+
+.bg-orange{background-color: #f0644f;color: aliceblue;font-weight:600;text-align:center}
+.m-right{border: 2px solid #f0644f; border-right: 2px solid white;}
+
+.underline{width: 100px; height:2px; background-color: orangered;}
+.bg-light-gray{background-color: rgba(111,111,111,0.09)}
+
+.media img{max-width:120px; height:auto}
+.underline-green{width: 70px; height: 2px; background-color:lawngreen}
+.underline-blue{width: 70px; height: 2px; background-color: mediumblue;}
+.underline-black{width: 70px; height: 2px; background-color: black;}
+
+.card-body{text-align: center;}
+
+.blog .media img{max-width: 200px; height: auto;}
+
+html,body{
+    height: 100%;
+}
+.xa .row{
+    flex-grow:1;
+}
+.fakeimg {
+    height: 200px;
+    background: rgba(194, 255, 182, 0.486);
+}
+.a{
+    background-color: rgba(0, 0, 255, 0.192);
+}
+.b{
+    background-color: rgba(219, 35, 142, 0.253);
+}
+.carousel-inner > .carousel-item{
+    height: 100%;
+}
+
+
+/* 
+  card */
+.card_m{
+    padding: 50px;
+    margin: 20px;
+}
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+   
+   
+    text-align: center;
+    font-family: arial;
+    
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+    
+  }
+
+  .h{height: 30%;}
+  
+  .image{
+      max-width: 100
+  }
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+  /* Banner */
+  .banner1{
+    color:#2B8EAC;
+    background: #656964 url(banner4.png) no-repeat center left;
+    font-family: "Century Gothic";
+    }
+    .banner{
+    margin:7px auto;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 12px;
+    padding-left:190px;
+    }
