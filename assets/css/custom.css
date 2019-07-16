@@ -58,3 +58,21 @@ footer ul{text-decoration: none; list-style-type: none;}
     border-radius: 9px;
     padding: 4px;
   }
+
+.a {
+    background-color: rgba(0, 0, 255, 0.192);
+}
+
+.b {
+    background-color: rgba(51, 255, 0, 0.952);
+}
+
+.body{
+    background-image: url(assets/img/gambar5.jpg);
+    background-repeat: no-repeat;
+}
+
+.batas_tepi{
+padding: 10px;
+
+}

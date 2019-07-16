@@ -97,3 +97,7 @@ html,body{
     -webkit-border-radius: 12px;
     padding-left:190px;
     }
+
+    .colour_a{
+      background-color: rgba(250, 245, 236, 0.911)
+    }
