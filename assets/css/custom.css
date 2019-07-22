@@ -89,3 +89,11 @@ input:focus,input:hover{background: cyan;}
     text-decoration: aqua;
     padding: 3px;
 }
+
+/* blog */
+.cont_blog{
+  width: 100%;
+  height: 500px;
+  padding: 10px;
+  border: 1px solid black;
+}
