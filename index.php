@@ -131,9 +131,8 @@
                 include_once('content/hubungi.php');
             }else if($page=='bantuan'){
                 include_once('content/bantuan.php');
-            }
-            else {
-                echo "DASHBOARD";
+            }else {
+                echo "dasbord";
             }
         ?>
     </section>
