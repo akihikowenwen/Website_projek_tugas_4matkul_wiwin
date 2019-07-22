@@ -11,6 +11,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+<?php 
+
+	$category = $_GET['cat'];
+
+	echo "SELECT * FROM book WHERE cat_id='$category'";
+
+?>
+
+<h1><?php echo $category; ?></h1>
+
+<div class="container px-0" style="background-color:white">
 <div class="col-md-9">
 			<div class="row">
 			<div class="col-md-12">
@@ -72,5 +83,6 @@
 			<!-- bagian mana aja ??? -->
 			</div> 
 		</div> 	
+</div>
 </body>
 </html>
