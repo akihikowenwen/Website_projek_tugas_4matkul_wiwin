@@ -160,7 +160,6 @@
                                     <br>
                                     <p><i class="fa fa-chevron-right" aria-hidden="true"></i> Tantang Kami</p>
                                     <p><i class="fa fa-chevron-right" aria-hidden="true"></i> Toko Kami</p>
-                                    <p><i class="fa fa-chevron-right" aria-hidden="true"></i> Kerjasama </p>
                                 </div>
                             </div>
                         </div>
