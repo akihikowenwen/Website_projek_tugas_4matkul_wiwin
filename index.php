@@ -18,13 +18,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!-- owl_Carousel -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/bootstrap4.css">
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-  <body>
+  <body >
     <header>
     <body style="background-color:rgb(189, 189, 189)">
     <div class="container px-0" style="background-color:white">
@@ -41,16 +44,13 @@
                                 <div class="col">
                                     <ul class="nav w-100 justify-content-end">
                                         <li class="nav-item">
-                                            <a class="nav-link active" href="index.php?page=daftar">Daftar</a>
+                                            <a class="nav-link" href="index.php?page=daftar">Daftar</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="index.php?page=masuk">Masuk</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="index.php?page=pengiriman">Pengiriman</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="index.php?page=account">My Account</a>
+                                            <a class="nav-link" href="#">My Account</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -68,7 +68,7 @@
                 </div>
                 <!-- navigasi bar goes here -->.
                 <nav class="navbar navbar-expand-lg navbar-light " style="background-color:rgb(226, 226, 226)">
-                    <a class="navbar-brand" href="index.php">Home</a>
+                    <a class="navbar-brand" href="index.php?page=home.php">Home</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -76,7 +76,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="index.php?page=categori?&idcategori" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Kategori
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -117,11 +117,12 @@
 
     <section id="content">
         <?php 
-            if($page == 'about') {
-                include_once('content/contoh.php');
-            } else if($page=='categori') {
-                include_once('content/categori.php');
-            }else if($page=='shop'){
+            // if($page == 'home') {
+            //     include_once('content/home.php');
+            // } else if($page=='categori') {
+            //     include_once('content/categori.php');
+            // }else
+             if($page=='shop'){
                 include_once('content/shop.php');
             }else if($page=='blog'){
                 include_once('content/blog.php');
@@ -131,8 +132,29 @@
                 include_once('content/hubungi.php');
             }else if($page=='bantuan'){
                 include_once('content/bantuan.php');
-            }else {
-                echo "dasbord";
+            }else if($page=='belanja'){
+                include_once('content/belanja.php');
+            }else if($page=='bayar'){
+                include_once('content/pembayaran.php');
+            }else if($page=='pengiriman'){
+                include_once('content/pengiriman.php');
+            }else if($page=='tentang'){
+                include_once('content/tentang.php');
+            }else if($page=='toko'){
+                include_once('content/tentang_toko.php');
+            }else IF($page=='syarat'){
+                include_once('content/syarat_ketentuan.php');
+            }else if($page=='bantuan'){
+                include_once('content/bantuan.php');
+            }else if($page=='hubungi'){
+                include_once('content/hubungi.php');
+            }else if($page==daftar){
+                include_once('content/daftar.php');
+            }else if($page==masuk){
+                include_once('content/masuk.php');
+            }else
+            {
+               include_once('content/home.php');
             }
         ?>
     </section>
@@ -144,11 +166,11 @@
                             <div class="row">
                                 <div class="col">
                                     <h5>Belanja</h5>
-                                    <div class="underline bg-light" style="width: 50px;"></div>
+                                    <div href="index." class="underline bg-light" style="width: 50px;"></div>
                                     <br>
-                                    <p><i class="fa fa-chevron-right" aria-hidden="true"></i> Berbelanja</p>
-                                    <p><i class="fa fa-chevron-right" aria-hidden="true"></i> Pembayaran</p>
-                                    <p><i class="fa fa-chevron-right" aria-hidden="true"></i> Pengiriman </p>
+                                    <p><a href="index.php?page=belanja" style="text-decoration: none; color: white;"><i class="fa fa-chevron-right" aria-hidden="true"></i> Berbelanja</a></p>
+                                    <p><a href="index.php?page=bayar" style="text-decoration: none; color: white;"><i class="fa fa-chevron-right" aria-hidden="true"></i> Pembayaran</a></p>
+                                    <p><a href="index.php?page=pengiriman" style="text-decoration: none; color: white;"><i class="fa fa-chevron-right" aria-hidden="true"></i> Pengiriman</a></p>
                                 </div>
                             </div>
                         </div>
@@ -158,8 +180,8 @@
                                     <h5>Tentang Toko</h5>
                                     <div class="underline bg-light" style="width: 50px;"></div>
                                     <br>
-                                    <p><i class="fa fa-chevron-right" aria-hidden="true"></i> Tantang Kami</p>
-                                    <p><i class="fa fa-chevron-right" aria-hidden="true"></i> Toko Kami</p>
+                                    <p><a href="index.php?page=tentang" style="text-decoration: none; color: white;"><i class="fa fa-chevron-right" aria-hidden="true"></i> Tentang Kami</a></p>
+                                    <p><a href="index.php?page=toko" style="text-decoration: none; color: white;"><i class="fa fa-chevron-right" aria-hidden="true"></i> Toko Kami</a></p>
                                 </div>
                             </div>
                         </div>
@@ -169,9 +191,9 @@
                                     <h5>Lainnya</h5>
                                     <div class="underline bg-light" style="width: 50px;"></div>
                                     <br>
-                                    <p><i class="fa fa-chevron-right" aria-hidden="true"></i> Syarat Dan Ketentuan</p>
-                                    <p><i class="fa fa-chevron-right" aria-hidden="true"></i> Bantuan</p>
-                                    <p><i class="fa fa-chevron-right" aria-hidden="true"></i> Hubungi </p>
+                                    <p><a href="index.php?page=syarat" style="text-decoration: none; color: white;"><i class="fa fa-chevron-right" aria-hidden="true"></i> Syarat Dan Ketentuan</a></p>
+                                    <p><a href="index.php?page=bantuan" style="text-decoration: none; color: white;"><i class="fa fa-chevron-right" aria-hidden="true"></i> Bantuan</a></p>
+                                    <p><a href="index.php?page=hubungi" style="text-decoration: none; color: white;"><i class="fa fa-chevron-right" aria-hidden="true"></i> Hubungi</a></p>
                                 </div>
                             </div> 
                         </div>
@@ -194,6 +216,49 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        var owl = $('.owl-two');
+        owl.owlCarousel({
+        margin: 10,
+        nav: true,
+        loop: true,
+        responsive: {
+            0: {
+            items: 1
+            },
+            600: {
+            items: 4
+            },
+            1000: {
+            items: 4
+            }
+        }
+        })
+    })
+    </script>
+    <script>
+    $(document).ready(function() {
+        var owl = $('.owl-one');
+        owl.owlCarousel({
+        margin: 10,
+        nav: true,
+        loop: true,
+        responsive: {
+            0: {
+            items: 1
+            },
+            600: {
+            items: 3
+            },
+            1000: {
+            items: 3
+            }
+        }
+        })
+    })
+    </script>
   </body>
 </html>
 
