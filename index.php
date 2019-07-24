@@ -148,9 +148,9 @@
                 include_once('content/bantuan.php');
             }else if($page=='hubungi'){
                 include_once('content/hubungi.php');
-            }else if($page==daftar){
+            }else if($page=='daftar'){
                 include_once('content/daftar.php');
-            }else if($page==masuk){
+            }else if($page=='masuk'){
                 include_once('content/masuk.php');
             }else
             {
