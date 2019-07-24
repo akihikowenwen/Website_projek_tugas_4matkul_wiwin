@@ -1,4 +1,4 @@
-<div class="container py-5 bg-light">
+<div class=" py-5 bg-light">
     <div class="row">
         <div class="col-8">
             <!-- carousel start -->
@@ -79,7 +79,7 @@
         </div>
     </div>
     
-    <div class="container-fluid py-5 bg-light-gray" style="height:650px" >
+    <div class="py-5 bg-light-gray" style="height:650px" >
                     <div class="row ">
                         <div class="col">
                             <ul class="nav nav-pills justify-content-center" id="myTab" role="tablist" >

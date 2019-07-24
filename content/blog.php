@@ -1,5 +1,5 @@
 <body>
-    <div class="container">
+    <div class="">
         <div class="row">
             <h1>Pendidikan Di indonesia</h1>
             <p>

@@ -1,6 +1,6 @@
 
                 <!-- slide goes here -->
-                <div class="container py-5">
+                <div class="py-5">
                     <div class="row">
                         <div class="col-8">
                             <!-- carousel start -->

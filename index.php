@@ -28,9 +28,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
   <body >
-    <header>
+    <header class="justify-cintent-center">
     <body style="background-color:rgb(189, 189, 189)">
-    <div class="container px-0" style="background-color:white">
+    <div class="px-0" style="background-color:white">
         <div class="row">
             <div class="col">
                 <!-- navigasi bar goes here -->
@@ -148,9 +148,9 @@
                 include_once('content/bantuan.php');
             }else if($page=='hubungi'){
                 include_once('content/hubungi.php');
-            }else if($page==daftar){
+            }else if($page=='daftar'){
                 include_once('content/daftar.php');
-            }else if($page==masuk){
+            }else if($page=='masuk'){
                 include_once('content/masuk.php');
             }else
             {
@@ -159,7 +159,7 @@
         ?>
     </section>
 
-    <div class="container pt-5 pb-5 bg-dark text-light">
+    <div class="justify-content-center pt-5 pb-5 bg-dark text-light">
                     <div class="row batas_tepi">
                         <!-- Belanja -->
                         <div class="col-md-3">
@@ -229,10 +229,10 @@
             items: 1
             },
             600: {
-            items: 4
+            items: 3
             },
             1000: {
-            items: 4
+            items: 6
             }
         }
         })

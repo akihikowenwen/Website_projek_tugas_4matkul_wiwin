@@ -1,6 +1,5 @@
 
-<body bgcolor="blue ">
-    <div class="container a h-100">
+    <div class=" a h-100">
             <h1>a
                     Tentang Budiman BookStore
             </h1>

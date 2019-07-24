@@ -1,5 +1,5 @@
 
-    <div class="container h-100" style="background-color:white">
+    <div class="h-100" style="background-color:white">
         <h1>all box</h1>
         <hr>
         <div class="row">
