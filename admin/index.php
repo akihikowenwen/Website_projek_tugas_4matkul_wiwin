@@ -1,20 +1,17 @@
-<?php
-	include"../inc/config.php";
-	validate_admin_not_login("login.php");
-	include"inc/header.php";
-?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="assets/css/bootstrap4.css">
+	<link rel="stylesheet" href="assets/css/custom.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<div class="container text-center" style="margin-top:20px;padding:50px;">
-
-		<?php
-			$q = mysql_query("select*from user WHere id='$_SESSION[iam_admin]'");
-			$u = mysql_fetch_object($q);
-		?>
-		<h2>Hi, <?php echo $u->nama ?></h2>
-		<br>
-		<br>
-		<h1>Welcome to Administrator</h1>
-    </div> <!-- /container -->
-
-
-<?php include"inc/footer.php"; ?>
+</head>
+<body>
+	
+</body>
+</html>
