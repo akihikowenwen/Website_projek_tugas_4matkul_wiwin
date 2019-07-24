@@ -1,6 +1,6 @@
-<div class=" py-5 bg-light">
-    <div class="row">
-        <div class="col-8">
+<section class="slide">
+<div class="row">
+        <div class="col">
             <!-- carousel start -->
                 <div id="carouselExampleIndicators" class="carousel slide h-100 py-5" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -9,7 +9,8 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <div class="row">
+                            <img src="./assets/img/banner1.jpg" alt="" class="">
+                            <!-- <div class="row">
                                 <div class="col-6 ">
                                     <div class="card">
                                         <img src="./assets/img/gambar3.jpg" alt="card-1" class="card-img-top">
@@ -32,10 +33,11 @@
                                     <hr>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="carousel-item">
-                            <div class="row">
+                            <img src="./assets/img/banner1.jpg" alt="">
+                            <!-- <div class="row">
                                 <div class="col-6">
                                     <div class="card">
                                         <div class="overflow-hidden">
@@ -59,7 +61,7 @@
                                     <button type="button" class="btn btn-outline-primary">Add To Cart</button>
                                     <hr>
                                     </ul>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -74,10 +76,13 @@
                 </div>
             <!-- carousel end -->
         </div>
-        <div class="col-4 overflow-hidden">
+        <!-- <div class="col-4 overflow-hidden">
             <img src="assets/img/gambar5.jpg" class="img-fluid" alt="Responsive image">
-        </div>
+        </div> -->
     </div>
+</section>
+<div class=" py-5 bg-light">
+   
     
     <div class="py-5 bg-light-gray" style="height:650px" >
                     <div class="row ">
