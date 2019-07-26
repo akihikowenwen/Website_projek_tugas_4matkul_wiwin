@@ -28,94 +28,113 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
   <body >
-    <header class="justify-cintent-center">
+    <header class="justify-cintent-center mb-3">
     <body style="background-color:rgb(189, 189, 189)">
     <div class="px-0" style="background-color:white">
         <div class="row">
             <div class="col">
+    <div class="px-0" style="background-color:white">
+        <div class="row">
+            <div class="col ">
                 <!-- navigasi bar goes here -->
-                <div class="container-fluid">
-                    <div class="row batas_tepi">
-                        <div class="col-md-6 text-center align-self-center">
-                            <img src="assets/img/banner1.jpg" alt="" class="">
+                <div class="container-fluid ">
+                    <div class="row batas_tepi a">
+                        <div class="col-md-3 text-center  align-self-center">
+                                    <img src="assets/img/banner1.jpg" alt="" style="object-fit:fill; height:150px; width:100%;">
                         </div>
                         <div class="col-md-6">
-                            <div class="row h-100"> 
-                                <div class="col">
-                                    <ul class="nav w-100 justify-content-end">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="index.php?page=daftar">Daftar</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="index.php?page=masuk">Masuk</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">My Account</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="w-100"></div>
-                                <div class="col  text-right ">
-                                    <button class="btn btn-danger">
-                                        <div class="col "> 
-                                        <i class="fa fa-cart-plus" aria-hidden="true">
-                                        </i> My Cart - Rp. 0.00</div>
-                                    </button>
-                                </div>
-                            </div>
+                            <form class="form-inline navbar " style="width:100%">
+									<input class="form-control mr-sm-2  " type="search" placeholder="Lebih dari 10 juta buku tersedia" style="width:85%; border-radius: 20px; height:45px;">
+									<button class="btn btn-outline-success my-2 my-sm-0" style="border-radius: 20px; height:45px;" type="submit">Search</button>
+							</form>
+                        </div>
+                        <div class="col-md-3  ">
+                                    <div class="row h-100"> 
+                                        <div class="col">
+                                            <ul class="nav w-100 justify-content-end">
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="index.php?page=daftar">Daftar</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="index.php?page=masuk">Masuk</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">My Account</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="w-100"></div>
+                                        <div class="col  text-right ">
+                                            <button class="btn btn-danger">
+                                                <div class="col "> 
+                                                <i class="fa fa-cart-plus" aria-hidden="true"></i> 
+                                                My Cart - Rp. 0.00
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
                         </div>
                     </div>
                 </div>
                 <!-- navigasi bar goes here -->.
-                <nav class="navbar navbar-expand-lg navbar-light " style="background-color:rgb(226, 226, 226)">
+                <nav class="nav navbar-expand-lg navbar-light  justify-content-center" style="background-color:rgb(226, 226, 226)">
+                    <ul class="nav justify-content-center">
                     <a class="navbar-brand" href="index.php?page=home.php">Home</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Kategori
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="index.php?page=categori&cat=anak">Anak</a>
-                                    <a class="dropdown-item" href="index.php?page=categori&cat=sekolah">Sekolah</a>
-                                    <a class="dropdown-item" href="index.php?page=categori&cat=Novels">Novel</a>
-                                    <a class="dropdown-item" href="index.php?page=categori&cat=komputer">Komputer</a>
-                                    <a class="dropdown-item" href="index.php?page=categori&cat=komik">Komik</a>
-                                    <a class="dropdown-item" href="index.php?page=categori&cat=kesehatan">Kesehatan</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Something else here</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Kategori
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="index.php?page=categori&cat=anak">Anak</a>
+                                        <a class="dropdown-item" href="index.php?page=categori&cat=sekolah">Sekolah</a>
+                                        <a class="dropdown-item" href="index.php?page=categori&cat=Novels">Novel</a>
+                                        <a class="dropdown-item" href="index.php?page=categori&cat=komputer">Komputer</a>
+                                        <a class="dropdown-item" href="index.php?page=categori&cat=komik">Komik</a>
+                                        <a class="dropdown-item" href="index.php?page=categori&cat=kesehatan">Kesehatan</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.php?page=shop">Shop</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.php?page=blog">Blog</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Tentang
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="index.php?page=testimoni">Testimoni</a>
+                                        <a class="dropdown-item" href="index.php?page=hubungi">Hubungi</a>
+                                        <a class="dropdown-item" href="index.php?page=bantuan">Bantuan</a>
+                                    </div>
+                                </li>
+                                <div class="nav_ " style="background-color:rgb(226, 226, 226)">
+                                    <div class="container">
+                                        <nav class="nav d-flex justify-content-between">
+                                            <a href="index.php?page=komputer" class="nav-link <?php if($page==='komputer'){echo 'active';} ?>">Komputer</a>
+                                            <a href="index.php?page=kesehatan" class="nav-link <?php if($page==='kesehatan'){echo 'active';} ?>">Kesehatan</a>
+                                            <a href="index.php?page=komik" class="nav-link <?php if($page==='komik'){echo 'active';} ?>">Komik</a>
+                                            <a href="index.php?page=novels" class="nav-link <?php if($page==='Novels'){echo 'active';} ?>">Novels</a>
+                                            <a href="index.php?page=pelajaran" class="nav-link <?php if($page==='pelajaran'){echo 'active';} ?>">Pelajaran</a>
+                                        </nav>
+                                    </div>
                                 </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.php?page=shop">Shop</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.php?page=blog">Blog</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Tentang
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="index.php?page=testimoni">Testimoni</a>
-                                    <a class="dropdown-item" href="index.php?page=hubungi">Hubungi</a>
-                                    <a class="dropdown-item" href="index.php?page=bantuan">Bantuan</a>
-                                </div>
-                            </li>
-                        </ul>
-                        <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                        </form>
-                    </div>
+                            </ul>
+                        </div>
+                    </ul>
                 </nav>
     </header>
 
-    <section id="content">
+    <section id="content " class="px-5">
         <?php 
             // if($page == 'home') {
             //     include_once('content/home.php');
@@ -210,6 +229,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="a text-align-centers">@copyright_akihiko_2019</div>
                 <!-- end footer -->
 
     <!-- javascript goes here -->
@@ -229,10 +249,10 @@
             items: 1
             },
             600: {
-            items: 3
+            items: 2
             },
             1000: {
-            items: 6
+            items: 4
             }
         }
         })
@@ -259,6 +279,43 @@
         })
     })
     </script>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="row">
+                                    <div class="col-6  batas_tepi">
+                                        <div class="card">
+                                            <div class="overflow-hidden">
+                                            <img src="assets/img/gambar3.jpg" alt="card-1" class="card-img-top"> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 batas_tepi">
+                                        <ul>
+                                        <h1>Buku Komik AAA</h1>
+                                        <hr>
+                                        Rp.30.000
+                                        <hr>
+                                        Stock :
+                                        <hr>
+                                        <h3>Deskripsi</h3>
+                                        <p>
+                                            Whenever possible, we prefer to write HTML and CSS over JavaScript. In general, HTML and CSS 
+                                            are more prolific and accessible to more people of all different experience levels. 
+                                        </p>
+                                        <button type="button" class="btn btn-outline-primary">Add To Cart</button>
+                                        
+                                        <hr>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="modal-footer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
   </body>
 </html>
 

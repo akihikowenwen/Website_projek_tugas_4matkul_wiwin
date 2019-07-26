@@ -60,7 +60,7 @@ input:focus,input:hover{background: cyan;}
   border-radius: 4px;
   padding: 5px;
   height: 300px;
-  width: 100%;
+  width: 175px;
 }
 
 .img_shop{
@@ -101,4 +101,25 @@ input:focus,input:hover{background: cyan;}
 .search_1{
   width: 75%;
   hover:black;
+}
+
+.slide{
+  object-fit: fill;
+  height: 300px;
+  width: 100%;
+}
+
+
+/* test */
+.nav_ a{
+  color: white;
+  text-decoration: none;
+}
+
+.nav_ a:hover{ 
+  background-color: rgba(21, 21, 255, 0.39);
+}
+
+.nav_ .active{
+  background-color:  rgba(21, 21, 255, 0.541);
 }
