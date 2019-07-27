@@ -30,7 +30,7 @@
         </div>
 </section>
 <!-- Buku terbaru -->
-<div class=" py-5 bg-light">
+<div class=" py-5 bg-light ">
     <P>Buku Terbaru</P>
     container owl-two owl-carousel owl-theme
     <div class="owl-carousel owl-two owl-theme">
@@ -38,7 +38,7 @@
             <div class="col">
                 <div class="row">
                     <div class="col-6  batas_tepi">
-                        <div class="card">
+                        <div class="card bg-light-gray">
                             <div class="overflow-hidden">
                             <img src="assets/img/gambar3.jpg" alt="card-1" class="card-img-top p-2"> 
                             </div>
@@ -90,6 +90,9 @@
             </div>
         </div>
     </div>
+</div>
+<div class="py-5 bg-light">
+
 </div>
 
 

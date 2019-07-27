@@ -1,0 +1,131 @@
+<?php 
+
+    if(isset($_GET['page'])){
+        $page = $_GET['page'];
+    } else {
+        $page = '';
+    }
+
+
+?>
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Contoh Include</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!-- owl_Carousel -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/bootstrap4.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+  <body >
+
+		<div class="a">
+				<ul class="nav w-100 justify-content-end a">
+						<li class="nav-item">
+								<a class="nav-link" href="index.php?page=daftar">Daftar</a>
+						</li>
+						<li class="nav-item">
+								<a class="nav-link" href="index.php?page=masuk">Masuk</a>
+						</li>
+						<li class="nav-item">
+								<a class="nav-link" href="#">My Account</a>
+						</li>
+				</ul>
+		</div>
+		<div class="a">
+			<div class="row">
+				<div class="col-3">a
+					<!-- <img src="assets/img/banner1.jpg" alt=""> -->
+				</div>
+				<div class="col-6">
+						<nav class="navbar ">
+								<form class="form-inline " style="width:100%">
+									<input class="form-control mr-sm-2  " type="search" placeholder="Lebih dari 10 juta buku tersedia" style="width:85%; border-radius: 20px; height:45px;">
+									<button class="btn btn-outline-success my-2 my-sm-0" style="border-radius: 20px; height:45px;" type="submit">Search</button>
+								</form>
+							</nav>
+				</div>
+				<div class="col-3">
+						<div class="w-100 align-middle"></div>
+						<div class="col  text-right ">
+								<button class="btn btn-danger">
+										<div class="col "> 
+										<i class="fa fa-cart-plus" aria-hidden="true">
+fgv								</button>
+						</div>c</div>
+			</div>
+		</div>
+    <header class="justify-cintent-center">
+    <body style="background-color:rgb(189, 189, 189)">
+    <div class="px-0" style="background-color:white">
+        <div class="row">
+            <div class="col">
+                <!-- navigasi bar goes here -->
+               
+    </header>
+
+ 
+
+    
+                <!-- end footer -->
+
+    <!-- javascript goes here -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        var owl = $('.owl-two');
+        owl.owlCarousel({
+        margin: 10,
+        nav: true,
+        loop: true,
+        responsive: {
+            0: {
+            items: 1
+            },
+            600: {
+            items: 3
+            },
+            1000: {
+            items: 6
+            }
+        }
+        })
+    })
+    </script>
+    <script>
+    $(document).ready(function() {
+        var owl = $('.owl-one');
+        owl.owlCarousel({
+        margin: 10,
+        nav: true,
+        loop: true,
+        responsive: {
+            0: {
+            items: 1
+            },
+            600: {
+            items: 3
+            },
+            1000: {
+            items: 3
+            }
+        }
+        })
+    })
+    </script>
+  </body> 
+</html>
+

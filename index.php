@@ -85,49 +85,19 @@
                         </button>
                         
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Kategori
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="index.php?page=categori&cat=anak">Anak</a>
-                                        <a class="dropdown-item" href="index.php?page=categori&cat=sekolah">Sekolah</a>
-                                        <a class="dropdown-item" href="index.php?page=categori&cat=Novels">Novel</a>
-                                        <a class="dropdown-item" href="index.php?page=categori&cat=komputer">Komputer</a>
-                                        <a class="dropdown-item" href="index.php?page=categori&cat=komik">Komik</a>
-                                        <a class="dropdown-item" href="index.php?page=categori&cat=kesehatan">Kesehatan</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.php?page=shop">Shop</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.php?page=blog">Blog</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Tentang
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="index.php?page=testimoni">Testimoni</a>
-                                        <a class="dropdown-item" href="index.php?page=hubungi">Hubungi</a>
-                                        <a class="dropdown-item" href="index.php?page=bantuan">Bantuan</a>
-                                    </div>
-                                </li>
-                                <div class="nav_ " style="background-color:rgb(226, 226, 226)">
-                                    <div class="container">
-                                        <nav class="nav d-flex justify-content-between">
-                                            <a href="index.php?page=komputer" class="nav-link <?php if($page==='komputer'){echo 'active';} ?>">Komputer</a>
-                                            <a href="index.php?page=kesehatan" class="nav-link <?php if($page==='kesehatan'){echo 'active';} ?>">Kesehatan</a>
-                                            <a href="index.php?page=komik" class="nav-link <?php if($page==='komik'){echo 'active';} ?>">Komik</a>
-                                            <a href="index.php?page=novels" class="nav-link <?php if($page==='Novels'){echo 'active';} ?>">Novels</a>
-                                            <a href="index.php?page=pelajaran" class="nav-link <?php if($page==='pelajaran'){echo 'active';} ?>">Pelajaran</a>
-                                        </nav>
-                                    </div>
-                                </div>
+                            <ul class="navbar-nav mr-auto">             
+                                <a href="index.php?page=komputer" class="d-flex nav-link nav-item <?php if($page==='komputer'){echo 'active';} ?>">Komputer</a>
+                                <a href="index.php?page=kesehatan" class="d-flex nav-link nav-item  <?php if($page==='kesehatan'){echo 'active';} ?>">Kesehatan</a>
+                                <a href="index.php?page=komik" class="nav-link <?php if($page==='komik'){echo 'active';} ?>">Komik</a>
+                                <a href="index.php?page=novels" class="nav-link <?php if($page==='novels'){echo 'active';} ?>">Novels</a>
+                                <a href="index.php?page=majalah" class="d-flex nav-link nav-item <?php if($page==='majalah'){echo 'active';} ?>">Majalah</a>
+                                <a href="index.php?page=kamus" class="d-flex nav-link nav-item  <?php if($page==='kamus'){echo 'active';} ?>">Kamus</a>
+                                <a href="index.php?page=ekonomi" class="nav-link <?php if($page==='ekonomi'){echo 'active';} ?>">Ekonomi</a>
+                                <a href="index.php?page=memasak" class="nav-link <?php if($page==='memasak'){echo 'active';} ?>">Memasak</a>
+                                <a href="index.php?page=bisnis" class="d-flex nav-link nav-item  <?php if($page==='bisnis'){echo 'active';} ?>">Bisnis</a>
+                                <a href="index.php?page=lainnya" class="d-flex nav-link nav-item  <?php if($page==='lainnya'){echo 'active';} ?>">Lainnya</a>
+
+                                
                             </ul>
                         </div>
                     </ul>
@@ -136,19 +106,10 @@
 
     <section id="content " class="px-5">
         <?php 
-            // if($page == 'home') {
-            //     include_once('content/home.php');
-            // } else if($page=='categori') {
-            //     include_once('content/categori.php');
-            // }else
-             if($page=='shop'){
-                include_once('content/shop.php');
+            if($page == '$page==categori') {
+                include_once('content/categori.php');
             }else if($page=='blog'){
                 include_once('content/blog.php');
-            }else if($page=='testimoni'){
-                include_once('content/testimoni.php');
-            }else if($page=='hubungi'){
-                include_once('content/hubungi.php');
             }else if($page=='bantuan'){
                 include_once('content/bantuan.php');
             }else if($page=='belanja'){
@@ -201,6 +162,7 @@
                                     <br>
                                     <p><a href="index.php?page=tentang" style="text-decoration: none; color: white;"><i class="fa fa-chevron-right" aria-hidden="true"></i> Tentang Kami</a></p>
                                     <p><a href="index.php?page=toko" style="text-decoration: none; color: white;"><i class="fa fa-chevron-right" aria-hidden="true"></i> Toko Kami</a></p>
+                                    <p><a href="index.php?page=blog" style="text-decoration: none; color: white;"><i class="fa fa-chevron-right" aria-hidden="true"></i> Blog</a></p>
                                 </div>
                             </div>
                         </div>

@@ -23,8 +23,8 @@
 </head>
 <body class="a">
     <Section header>
-        <div class="nav nav-tab">
-            <a href="index.php" class="tab-items">Home</a>
+        <div class="nav nav-tab" style="bg-color:black;">
+            <a href="index.php" class=" navbar">Home</a>
             <a href="index.php?page=data" class="tab-item">Master Data</a>
             <a href="index.php?page=laporan" class="tab-item">Laporan</a>
             <a href="index.php?page=pesanan" class="tab-item">Pesanan</a>
