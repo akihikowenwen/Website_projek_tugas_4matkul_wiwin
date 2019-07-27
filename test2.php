@@ -27,11 +27,11 @@
     <div class="nav_  bg-black">
         <div class="container">
             <nav class="nav d-flex justify-content-between">
-                <a href="test.php?page=komputer" class="nav-link <?php if($page==='komputer'){echo 'active';} ?>">Komputer</a>
-                <a href="test.php?page=kesehatan" class="nav-link <?php if($page==='kesehatan'){echo 'active';} ?>">Kesehatan</a>
-                <a href="test.php?page=komik" class="nav-link <?php if($page==='komik'){echo 'active';} ?>">Komik</a>
-                <a href="test.php?page=novels" class="nav-link <?php if($page==='novels'){echo 'active';} ?>">Novels</a>
-                <a href="test.php?page=pelajaran" class="nav-link <?php if($page==='pelajaran'){echo 'active';} ?>">Pelajaran</a>
+                <a href="test2.php?page=komputer" class="nav-link <?php if($page==='komputer'){echo 'active';} ?>">Komputer</a>
+                <a href="test2.php?page=kesehatan" class="nav-link <?php if($page==='kesehatan'){echo 'active';} ?>">Kesehatan</a>
+                <a href="test2.php?page=komik" class="nav-link <?php if($page==='komik'){echo 'active';} ?>">Komik</a>
+                <a href="test2.php?page=novels" class="nav-link <?php if($page==='novels'){echo 'active';} ?>">Novels</a>
+                <a href="test2.php?page=pelajaran" class="nav-link <?php if($page==='pelajaran'){echo 'active';} ?>">Pelajaran</a>
             </nav>
         </div>
     </div>

@@ -79,23 +79,23 @@
                 <!-- navigasi bar goes here -->.
                 <nav class="nav navbar-expand-lg navbar-light  justify-content-center" style="background-color:rgb(226, 226, 226)">
                     <ul class="nav justify-content-center">
-                    <a class="navbar-brand" href="index.php?page=home.php">Home</a>
+                    <a class="navbar-brand nav_" href="index.php?page=home.php">Home</a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav mr-auto">             
-                                <a href="index.php?page=komputer" class="d-flex nav-link nav-item <?php if($page==='komputer'){echo 'active';} ?>">Komputer</a>
-                                <a href="index.php?page=kesehatan" class="d-flex nav-link nav-item  <?php if($page==='kesehatan'){echo 'active';} ?>">Kesehatan</a>
+                            <ul class="navbar-nav nav_ mr-auto">             
+                                <a href="index.php?page=komputer" class="nav-link  <?php if($page==='komputer'){echo 'active';} ?>">Komputer</a>
+                                <a href="index.php?page=kesehatan" class="nav-link   <?php if($page==='kesehatan'){echo 'active';} ?>">Kesehatan</a>
                                 <a href="index.php?page=komik" class="nav-link <?php if($page==='komik'){echo 'active';} ?>">Komik</a>
                                 <a href="index.php?page=novels" class="nav-link <?php if($page==='novels'){echo 'active';} ?>">Novels</a>
-                                <a href="index.php?page=majalah" class="d-flex nav-link nav-item <?php if($page==='majalah'){echo 'active';} ?>">Majalah</a>
-                                <a href="index.php?page=kamus" class="d-flex nav-link nav-item  <?php if($page==='kamus'){echo 'active';} ?>">Kamus</a>
+                                <a href="index.php?page=majalah" class="nav-link  <?php if($page==='majalah'){echo 'active';} ?>">Majalah</a>
+                                <a href="index.php?page=kamus" class="nav-link   <?php if($page==='kamus'){echo 'active';} ?>">Kamus</a>
                                 <a href="index.php?page=ekonomi" class="nav-link <?php if($page==='ekonomi'){echo 'active';} ?>">Ekonomi</a>
                                 <a href="index.php?page=memasak" class="nav-link <?php if($page==='memasak'){echo 'active';} ?>">Memasak</a>
-                                <a href="index.php?page=bisnis" class="d-flex nav-link nav-item  <?php if($page==='bisnis'){echo 'active';} ?>">Bisnis</a>
-                                <a href="index.php?page=lainnya" class="d-flex nav-link nav-item  <?php if($page==='lainnya'){echo 'active';} ?>">Lainnya</a>
+                                <a href="index.php?page=bisnis" class="nav-link   <?php if($page==='bisnis'){echo 'active';} ?>">Bisnis</a>
+                                <a href="index.php?page=lainnya" class="nav-link   <?php if($page==='lainnya'){echo 'active';} ?>">Lainnya</a>
 
                                 
                             </ul>

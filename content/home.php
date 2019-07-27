@@ -32,7 +32,6 @@
 <!-- Buku terbaru -->
 <div class=" py-5 bg-light ">
     <P>Buku Terbaru</P>
-    container owl-two owl-carousel owl-theme
     <div class="owl-carousel owl-two owl-theme">
         <div class="row p-5">
             <div class="col">
@@ -63,7 +62,6 @@
 
 <div class="py-5 bg-light-gray">
     <P>Buku Terlaris</P>
-    container owl-two owl-carousel owl-theme
     <div class="owl-carousel owl-two owl-theme">
         <div class="row p-5">
             <div class="col">
@@ -92,7 +90,21 @@
     </div>
 </div>
 <div class="py-5 bg-light">
-
+    <p class="justify-content-center bg-green"> Blog </p>
+    <div class="owl-carousel owl-two owl-theme">
+        <div class="row p-5">
+            <div col>
+                <div class="card">
+                <div class="d-table m-2" style="width:400px;height:250px;background-image:url('assets/img/gambar1.jpg');background-size:cover;background-position:center">
+                    <div class="d-table-cell align-middle text-center">
+                        <p style="font-size:100px; color:white; font-weight:700;">
+                            test
+                        </p>
+                    </div>
+                </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
 </div>
-
-
