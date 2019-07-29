@@ -112,7 +112,7 @@ input:focus,input:hover{background: cyan;}
 
 /* test */
 .nav_ a{
-  color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
   text-decoration: none;
   border-radius: 3px;
 }

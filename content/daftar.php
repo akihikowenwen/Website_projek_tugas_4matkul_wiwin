@@ -1,29 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap4.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<div class="px-5">
-    <div class="row">
-    <div class="col-md-9">
-        <div class="row">
-            <div class="col-md-12">
-            <h3>Register User</h3>
-                <hr>
-                <div class="col-md-7 content-menu" style="margin-top:-20px;">
-                    <form action="" method="post" enctype="multipart/form-data">
-                        <label>Nama</label><br>
-                        <input type="text" class="form-control" name="nama" required placeholder="Masukkan Nama"><br>
-                        <label>Email</label><br>
-                        <input type="email" class="form-control" name="email" required placeholder="Masukkan Email"><br>
-                        <label>Password</label><br>
-                        <input type="password" class="form-control" name="password" required placeholder="Masukkan Password"><br>
-                        <label>Konfirmasi Password</label><br>
-                        <input type="password" class="form-control" name="password" required placeholder="konfirmasi Password"><br>
-                        <input type="submit" name="form-input" value="Register" class="btn btn-success">
-                    </form>
-                </div>
-                <div class="col-md-12 content-menu">
-                    Sudah Punya Akun ? <a href="login.php">Login Sekarang !</a>
-                </div>
-            </div>  
-        </div>
-    </div>
-    </div>
+</head>
+<body>
+<div class="container-md-6">
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
 </div>
+
+</body>
+</html>
