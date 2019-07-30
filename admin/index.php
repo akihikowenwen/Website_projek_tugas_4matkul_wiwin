@@ -1,3 +1,17 @@
+<?php 
+
+    if(isset($_GET['page'])){
+        $page = $_GET['page'];
+    } else {
+        $page = '';
+    }
+
+
+?>
+<?php 
+	include_once"./config/conn.php";
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -12,7 +26,7 @@
   <body>
 
   <nav class="navbar navbar-expand navbar-light bg-light justify-content-center">
-      <a class="navbar-brand" href="#">Budiman</a>
+      <a class="navbar-brand" href="index.php">Budiman</a>
       <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
           aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -20,13 +34,13 @@
       <div class="collapse navbar-collapse" id="collapsibleNavId">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
               <li class="nav-item active">
-                  <a class="nav-link" href="#">Dasbord <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="index.php">Dasbord <span class="sr-only">(current)</span></a>
               </li>
              
               <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Master Data</a>
                   <div class="dropdown-menu" aria-labelledby="dropdownId">
-                      <a class="dropdown-item" href="#">Data <i class="fa fa-user" aria-hidden="true"></i></a>
+                      <a class="dropdown-item" href="#">Data User<i class="fa fa-user" aria-hidden="true"></i></a>
                       <a class="dropdown-item" href="#">Data Admin</a>
                       <a class="dropdown-item" href="#">Data buku</a>
                       <a class="dropdown-item" href="#">Data Kategori</a>
@@ -40,6 +54,15 @@
                      
                   </div>
               </li>
+              <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Laporan</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownId">
+                      <a class="dropdown-item" href="#">Laporan Pembayaran<i class="fa fa-user" aria-hidden="true"></i></a>
+                      <a class="dropdown-item" href="#">Laporan transaksi</a>
+                     
+                  </div>
+              </li> -->
+              
               <li class="nav-item">
                   <a class="nav-link" href="#">Pesanan</a>
               </li>
@@ -53,11 +76,18 @@
       </div>
   </nav>
 
-  <div class="content">
-      <div class="container">
-        <?php include('dat_buku.php');?>
-      </div>
-  </div>
+  <section id="content " class="px-5">
+        <?php 
+            if($page == '$page==komputer') {
+                include_once('content/categori.php');
+            }else if($page=='blog'){
+                include_once('content/blog.php');
+            }else
+            {
+               include_once('content/home.php');
+            }
+        ?>
+    </section>
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

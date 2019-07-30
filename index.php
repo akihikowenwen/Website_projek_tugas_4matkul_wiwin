@@ -89,7 +89,7 @@
                         </button>
                         
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav nav_ mr-auto">             
+                            <ul class="navbar-nav nav_ mr-auto">
                                 <a href="index.php?page=komputer" class="nav-link  <?php if($page==='komputer'){echo 'active';} ?>">Komputer</a>
                                 <a href="index.php?page=kesehatan" class="nav-link   <?php if($page==='kesehatan'){echo 'active';} ?>">Kesehatan</a>
                                 <a href="index.php?page=komik" class="nav-link <?php if($page==='komik'){echo 'active';} ?>">Komik</a>
@@ -110,7 +110,7 @@
 
     <section id="content " class="px-5">
         <?php 
-            if($page == '$page==categori') {
+            if($page == '$page==komputer') {
                 include_once('content/categori.php');
             }else if($page=='blog'){
                 include_once('content/blog.php');
