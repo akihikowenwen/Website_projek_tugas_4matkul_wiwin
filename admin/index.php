@@ -9,7 +9,7 @@
 
 ?>
 <?php 
-	include_once"./config/conn.php";
+	include_once"../config/conn.php";
 ?>
 
 <!doctype html>
@@ -40,17 +40,17 @@
               <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Master Data</a>
                   <div class="dropdown-menu" aria-labelledby="dropdownId">
-                      <a class="dropdown-item" href="#">Data User<i class="fa fa-user" aria-hidden="true"></i></a>
-                      <a class="dropdown-item" href="#">Data Admin</a>
-                      <a class="dropdown-item" href="#">Data buku</a>
-                      <a class="dropdown-item" href="#">Data Kategori</a>
+                      <a class="dropdown-item" href="index.php?page=user">Data User<i class="fa fa-user" aria-hidden="true"></i></a>
+                      <a class="dropdown-item" href="index.php?page=admin">Data Admin</a>
+                      <a class="dropdown-item" href="index.php?page=buku">Data buku</a>
+                      <a class="dropdown-item" href="index.php?page=kategori">Data Kategori</a>
                   </div>
               </li>
               <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pengiriman</a>
                   <div class="dropdown-menu" aria-labelledby="dropdownId">
-                      <a class="dropdown-item" href="#">Data kota<i class="fa fa-user" aria-hidden="true"></i></a>
-                      <a class="dropdown-item" href="#">Data Kurir</a>
+                      <a class="dropdown-item" href="index.php?page=kota">Data kota<i class="fa fa-user" aria-hidden="true"></i></a>
+                      <a class="dropdown-item" href="index.php?page=kurir">Data Kurir</a>
                      
                   </div>
               </li>
@@ -64,13 +64,13 @@
               </li> -->
               
               <li class="nav-item">
-                  <a class="nav-link" href="#">Pesanan</a>
+                  <a class="nav-link" href="index.php?page=pesanan">Pesanan</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#">Pembayaran</a>
+                  <a class="nav-link" href="index.php?page=pembayaran">Pembayaran</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#">LogOut</a>
+                  <a class="nav-link" href="index.php?page=logout">LogOut</a>
               </li>
           </ul>
       </div>
@@ -78,13 +78,25 @@
 
   <section id="content " class="px-5">
         <?php 
-            if($page == '$page==komputer') {
-                include_once('content/categori.php');
-            }else if($page=='blog'){
-                include_once('content/blog.php');
+            if($page == 'user') {
+                include_once('content/data_user.php');
+            }else if($page=='admin'){
+                include_once('content/data_admin.php');
+            }else if($page=='buku'){
+                include_once('content/data_buku.php');
+            }else if($page=='kategori'){
+                include_once('content/data_kategori.php');
+            }else if($page=='kota'){
+                include_once('content/data_kota.php');
+            }else if($page=='kurir'){
+                include_once('content/data_kurir.php');
+            }else if($page=='pesanan'){
+                include_once('content/pesanan.php');
+            }else if($page=='pembayaran'){
+                include_once('content/pembayaran');
             }else
             {
-               include_once('content/home.php');
+               include_once('index.php');
             }
         ?>
     </section>

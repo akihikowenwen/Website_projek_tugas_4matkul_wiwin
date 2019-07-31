@@ -110,7 +110,7 @@
 
     <section id="content " class="px-5">
         <?php 
-            if($page == '$page==komputer') {
+            if($page == 'komputer') {
                 include_once('content/categori.php');
             }else if($page=='blog'){
                 include_once('content/blog.php');
