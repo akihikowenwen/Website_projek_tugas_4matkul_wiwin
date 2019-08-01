@@ -1,4 +1,3 @@
-
 <section class="slide mb-2">
 <div class="row">
         <div class="col">
@@ -52,8 +51,8 @@
                                 <h1><?php echo $data['judul_buku'] ?></h1>
                                 <p style="font-size:18px">Harga :<?php echo number_format($data['harga'], 2, ',', '.') ?></p>
                                 <p>
-                                <a href="<?php echo $url; ?>menu.php?id=<?php echo $data['id'] ?>" class="btn btn-success btn-sm" href="#" role="button">Lihat Detail</a>
-                                <a href="<?php echo $url; ?>keranjang.php?act=beli&&produk_id=<?php echo $data['id'] ?>" class="btn btn-info btn-sm" href="#" role="button">Pesan</a>
+                                <a href="<?php echo $url; ?>menu.php?id=<?php echo $data['id_buku'] ?>" class="btn btn-success btn-sm" href="#" role="button">Lihat Detail</a>
+                                <a href="<?php echo $url; ?>keranjang.php?act=beli&&produk_id=<?php echo $data['id_buku'] ?>" class="btn btn-info btn-sm" href="#" role="button">Pesan</a>
                                 </p>
                                 <hr>
                             </div> 
@@ -88,8 +87,8 @@
                             <h1><?php echo $data['judul_buku'] ?></h1>
                             <p style="font-size:18px">Harga :<?php echo number_format($data['harga'], 2, ',', '.') ?></p>
                             <p>
-                            <a href="<?php echo $url; ?>menu.php?id=<?php echo $data['id'] ?>" class="btn btn-success btn-sm" href="#" role="button">Lihat Detail</a>
-                            <a href="<?php echo $url; ?>keranjang.php?act=beli&&produk_id=<?php echo $data['id'] ?>" class="btn btn-info btn-sm" href="#" role="button">Pesan</a>
+                            <a href="<?php echo $url; ?>menu.php?id=<?php echo $data['id_buku'] ?>" class="btn btn-success btn-sm" href="#" role="button">Lihat Detail</a>
+                            <a href="<?php echo $url; ?>keranjang.php?act=beli&&produk_id=<?php echo $data['id_buku'] ?>" class="btn btn-info btn-sm" href="#" role="button">Pesan</a>
                         </p>
                             <hr>
                         </div>
