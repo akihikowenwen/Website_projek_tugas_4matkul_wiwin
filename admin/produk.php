@@ -45,8 +45,6 @@
 			}
 		}
 	}
-
-	
 ?> 	
 	<div class="container">
 		<?php
@@ -146,11 +144,7 @@
 
 				</tr>
 			</thead> 
-			<tbody> 
-				
-
-			
-			
+			<tbody> 			
 		<?php while($data=mysql_fetch_object($q)){ ?> 
 				<tr> 
 					<th scope="row"><?php echo $no++; ?></th> 
