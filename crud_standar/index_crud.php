@@ -48,6 +48,7 @@
                         <th scope="col">No</th>
                         <th scope="col">Title</th>
                         <th scope="col">Deskripsi</th>
+                        <th scope="col">Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -60,6 +61,11 @@
                         <th scope="row"><?php echo $no; ?></th>
                         <td><?php echo $x['title']; ?></td>
                         <td><?php echo $x['description']; ?></td>
+                        <td> 
+                            <a href="#" class="btn btn-outline-primary">
+                                Tambah Data
+                            </a>
+                        </td>
                     </tr>
                     <?php
                         $no++;
