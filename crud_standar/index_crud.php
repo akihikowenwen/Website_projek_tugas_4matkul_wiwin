@@ -21,11 +21,11 @@
                                     <form action="index.php?page=crud&&action=proses" method="POST">
                                         <div class="form-group">
                                             <label for="title">Title</label>
-                                            <input type="text" class="form-control" name="title" id="title" aria-describedby="emailHelp" placeholder="Enter judul">
+                                            <input type="text" class="form-control" name="title" id="title" aria-describedby="emailHelp" placeholder="Enter judul" required>
                                         </div>
                                         <div class="form-group">
                                             <label for="deskrispi">Deskripsi</label>
-                                            <input type="text" class="form-control" name="deskrispi" id="deskrispi" placeholder="deskripsi">
+                                            <input type="text" class="form-control" name="deskrispi" id="deskrispi" placeholder="deskripsi" required>
                                         </div>
                                         <button type="submit" name="input" class="btn btn-primary">Submit</button>
                                     </form>
