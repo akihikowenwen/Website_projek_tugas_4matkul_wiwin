@@ -7,10 +7,14 @@
         </div>
         <div class="w-100"></div>
         <div class="col text-center">
-            <a href="index.php?page=crud&&action=input" class="btn btn-outline-primary">Tambah Data</a>
+            
             <?php
+                if($_GET['action']=="show"){
+                    echo '<a href="index.php?page=crud&&action=input" class="btn btn-outline-success w-25">Tambah Data</a>';
+                }
                 if($_GET['action']=="input"){
                     echo '
+                    <a href="index.php?page=crud&&action=show" class="btn btn-outline-success w-25">Close</a>
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-6">
@@ -62,8 +66,11 @@
                         <td><?php echo $x['title']; ?></td>
                         <td><?php echo $x['description']; ?></td>
                         <td> 
-                            <a href="#" class="btn btn-outline-primary">
-                                Tambah Data
+                            <a href="" class="btn btn-outline-primary">
+                                Edit Data
+                            </a>
+                            <a href="" class="btn btn-outline-danger">
+                                Delete Data
                             </a>
                         </td>
                     </tr>
