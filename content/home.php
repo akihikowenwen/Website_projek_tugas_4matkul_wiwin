@@ -32,16 +32,18 @@
 <div class="py-5 bg-light">
     <h1 class="text-center mb-5">Buku Terbaru</h1>
     <div class="owl-carousel owl-two owl-theme">
-        <?php 
-            $k = mysql_query("SELECT * FROM tb_buku ORDER BY id_buku DESC limit 3"); 
-            while($data = mysql_fetch_array($k)){                
-        ?>
+            <?php 
+            $query = "SELECT * FROM tb_buku"; // Query untuk menampilkan semua data siswa
+            $sql = mysqli_query($connect, $query); // Eksekusi/Jalankan query dari variabel $query
+            
+            while($data = mysqli_fetch_array($sql)){ // Ambil semua data dari hasil eksekusi $sql?>
         <div class="item pl-4">
             <div class="row">
                 <div class="col-6 batas_tepi" style="max-width:600px; max-height:400px;">
                     <div class="card bg-light-gray">
                         <div class="overflow-hidden">
-                            <img src="assets/img/gambar3.jpg" alt="card-1" class="card-img-top p-2"> 
+                      
+                            <img src="./img_buku/<?php echo $data['foto']?>" alt="card-1" class="card-img-top p-2"> 
                         </div>
                     </div>
                 </div>
@@ -68,15 +70,16 @@
     <h1 class="text-center mb-5">Buku Terlaris</h1>
     <div class="owl-carousel owl-two owl-theme">
         <?php 
-            $k = mysql_query("SELECT * FROM tb_buku ORDER BY id_buku DESC limit 3"); 
-            while($data = mysql_fetch_array($k)){
-        ?>
-        <div class="item pl-4">
+            $query = "SELECT * FROM tb_buku "; // Query untuk menampilkan semua data siswa
+            $sql = mysqli_query($connect, $query); // Eksekusi/Jalankan query dari variabel $query
+            
+            while($data = mysqli_fetch_array($sql)){ // Ambil semua data dari hasil eksekusi $sql?>
+            <div class="item pl-4">
             <div class="row">
                 <div class="col-6 batas_tepi" style="max-width:600px; max-height:400px;">     
                     <div class="card bg-light">
                         <div class="overflow-hidden">
-                        <img src="assets/img/gambar3.jpg" alt="card-1" class="card-img-top p-2"> 
+                        <img src="./img_buku/<?php echo $data['foto']?>" alt="card-1" class="card-img-top p-2"> 
                         </div>
                     </div>
                 </div>
@@ -93,13 +96,15 @@
                     </div>
                 </div>
             </div>
+            
         </div>
         <?php } ?>
+        
     </div>
 </div>
 <div class="py-5 bg-light">
     <h1 class="text-center">Blog</h1>
-    <div class="owl-carousel owl-one owl-theme">
+    <div class="owl-carousel owl-two owl-theme">
         <?php 
             $k = mysql_query("SELECT * FROM tb_blog ORDER BY id DESC limit 3"); 
             while($data = mysql_fetch_array($k)){        
@@ -107,7 +112,7 @@
         <div class="row p-5">
             <div col-3>
                 <div class="card p-2" style="max-width:430px">
-                    <div class="d-table m-2" style="width:400px;height:250px;background-image:url('assets/img/gambar1.jpg');background-size:cover;background-position:center">
+                    <div class="d-table m-2" style="width:400px;height:250px;background-image:url('./img_buku/<?php echo $data['foto']?>');background-size:cover;background-position:center">
                         <div class="d-table-cell align-middle text-center">
                             <p style="font-size:100px; color:white; font-weight:700;">
                                 test

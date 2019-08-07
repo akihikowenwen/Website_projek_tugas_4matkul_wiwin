@@ -49,7 +49,7 @@
     <section content>
     <?php 
              if($page=='data'){
-                include_once('content_admin/master_data.php');
+                include_once('produk.php');
             }else if($page=='pembayaran'){
                 include_once('content_admin/pembayaran.php');
             }else if($page=='laporan'){
