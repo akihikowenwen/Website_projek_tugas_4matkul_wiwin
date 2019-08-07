@@ -16,7 +16,7 @@ $sql2 = mysqli_query($connect, $query2); // Eksekusi/Jalankan query dari variabe
 if($sql2){ // Cek jika proses simpan ke database sukses atau tidak
   // Jika Sukses, Lakukan :
   header("location: index.php"); // Redirect ke halaman index.php
-}else{
+}else{ 
   // Jika Gagal, Lakukan :
   echo "Data gagal dihapus. <a href='index.php'>Kembali</a>";
 }
