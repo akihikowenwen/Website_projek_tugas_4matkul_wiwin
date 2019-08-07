@@ -1,3 +1,6 @@
+<?php
+include "./../config/conn.php";
+?>
 <html>
 <head>
   <title>Aplikasi CRUD dengan PHP</title>
@@ -6,10 +9,24 @@
   <h1>Tambah Data Buku</h1>
   <form method="post" action="index.php?page=simpan" enctype="multipart/form-data">
   <table cellpadding="8">
- 
   <tr>
     <td>Kategori</td>
-    <td><input type="text" name="id_kategori" class="form-control" required></textarea></td>
+    <td>
+      <label for="inputState">Kategori</label>
+      <select id="inputState" class="form-control">
+        <?php
+          $p = mysqli_query($connect,"SELECT * FROM tb_kategori");
+          while($s = mysqli_fetch_array($p)){
+        ?>
+          <option value="<?php echo $s['nama_kategori']; ?>"><?php echo $s['nama_kategori']; ?></option>
+        <?php
+        echo $s['nama_kategori'];
+          }
+        ?>
+      </select>
+
+    <!-- <input type="text" name="id_kategori" class="form-control" required></textarea> -->
+    </td>
   </tr>
   <tr>
     <td>Judul Buku</td>
