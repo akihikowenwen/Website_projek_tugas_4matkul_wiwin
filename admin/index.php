@@ -105,8 +105,9 @@
                 include_once('config/buku/proses_simpan.php');
             }else if($page=='edit'){
                 include_once('config/buku/proses_ubah.php');
-            
-                //end buku
+            }else if($page=='delete'){
+                include_once('config/buku/proses_hapus.php');
+                 //end buku
             }else if($page=='kategori'){
                 include_once('config/kategori/tampil.php');
             }else if($page=='kota'){

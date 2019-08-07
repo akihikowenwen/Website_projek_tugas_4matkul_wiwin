@@ -40,7 +40,7 @@
       <td>
       <a href='proses_ubah.php?nis=".$data['id-buku']."'>
       <a class="btn btn-sm btn-success" href="index.php?page=edit&id=<?php echo $data['id_buku'] ?>">Edit</a>
-	    <a class="btn btn-sm btn-danger" href="index.php?page=delete7id<?php echo $data['id_buku ']?>">Delete</a>
+	    <a class="btn btn-sm btn-danger" href="index.php?page=delete&id<?php echo $data['id_buku ']?>">Delete</a>
       </td>
     </tr>
   <?php }?>

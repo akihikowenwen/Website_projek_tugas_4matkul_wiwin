@@ -2,7 +2,7 @@
 // Load file koneksi.php
 include "./../config/conn.php";
 // Ambil data NIS yang dikirim oleh index.php melalui URL
-$id_buku = $_GET['id_buku'];
+$id_buku = $_GET['id'];
 // Query untuk menampilkan data siswa berdasarkan NIS yang dikirim
 $query = "SELECT * FROM tb_buku WHERE id_buku='".$id_buku."'";
 $sql = mysqli_query($connect, $query); // Eksekusi/Jalankan query dari variabel $query
