@@ -39,7 +39,7 @@ input:focus,input:hover{background: rgba(0, 234, 255, 0.212);}
   }
 
 .a{background-color: rgba(0, 0, 255, 0.192);}
-.b{background-color: rgba(51, 255, 0, 0.349);}
+.b{background-color:  rgba(0, 0, 255, 0.37);}
 .body{background-image: url(assets/img/gambar5.jpg);background-repeat: no-repeat;}
 .batas_tepi{padding: 10px;}
 

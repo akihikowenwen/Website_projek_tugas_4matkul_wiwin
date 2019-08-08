@@ -19,76 +19,53 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">   <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap4.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
-  <body>
-
-  <nav class="navbar navbar-expand navbar-light bg-light justify-content-center">
-      <a class="navbar-brand" href="index.php">Budiman</a>
-      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-          aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavId">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-              <li class="nav-item active">
-                  <a class="nav-link" href="index.php">Dasbord <span class="sr-only">(current)</span></a>
-              </li>
-             
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Master Data</a>
-                  <div class="dropdown-menu" aria-labelledby="dropdownId">
-                      <a class="dropdown-item" href="index.php?page=user">Data User<i class="fa fa-user" aria-hidden="true"></i></a>
-                      <a class="dropdown-item" href="index.php?page=admin">Data Admin</a>
-                      <a class="dropdown-item" href="index.php?page=buku">Data buku</a>
-                      <a class="dropdown-item" href="index.php?page=kategori">Data Kategori</a>
-                  </div>
-              </li>
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pengiriman</a>
-                  <div class="dropdown-menu" aria-labelledby="dropdownId">
-                      <a class="dropdown-item" href="index.php?page=kota">Data kota<i class="fa fa-user" aria-hidden="true"></i></a>
-                      <a class="dropdown-item" href="index.php?page=kurir">Data Kurir</a>
-                     
-                  </div>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="index.php?page=pesanan">Pesanan</a>
-              </li>
-              <?php if(!empty($_SESSION['iam_user'])){ ?>
-			<?php 
-				$user = mysql_fetch_object(mysql_query("SELECT*FROM user where id='$_SESSION[iam_user]'"));
-			?>
-      <li><a class="nav-item" href="<?php echo $url ?>pembayaran.php">Pembayaran</a></li>      
-			<li class="dropdown">
-				
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hi </span></a>
-              <ul class="dropdown-menu">
-                <li><a href="@#">Profil</a></li> 
-                <li><a href="@#"">Logout</a></li>  
-              </ul>
-            </li>
-			<?php }else{ ?>
-			<li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login/Register <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="@#Login</a></li> 
-                <li><a href="@#p">Register</a></li>  
-              </ul>
-            </li>
-			<?php } ?>
-			
-
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
+  <body class="a">
+  <!-- //nav here -->
+    <nav class="navbar navbar-expand navbar-light b justify-content-center">
+        <a class="navbar-brand" href="#">Web Administrator</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                
+                    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.php">Home<span class="sr-only">(current)</span></a>
+                            </li>
+                            
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Master Data</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                        <a class="dropdown-item" href="index.php?page=user">Data User<i class="fa fa-user" aria-hidden="true"></i></a>
+                                        <a class="dropdown-item" href="index.php?page=admin">Data Admin</a>
+                                        <a class="dropdown-item" href="index.php?page=buku">Data buku</a>
+                                        <a class="dropdown-item" href="index.php?page=kategori">Data Kategori</a>
+                                        <a class="dropdown-item" href="index.php?page=kota">Data kota</a>
+                                        <a class="dropdown-item" href="index.php?page=penulia">Data penulia</a>
+                                        <a class="dropdown-item" href="index.php?page=penerbit">Data penerbit</a>
+                                    </div>
+                                </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.php?page=pesanan">Pesanan</a>
+                            </li>
+                        </ul>
+                    </div>
+            </form>
+        </div>
     </nav>
-
-  
- 
-          </ul>
-      </div>
-  </nav>
+ <!-- //end navbar -->
 
   <section id="content " class="px-5">
         <?php 
@@ -124,8 +101,6 @@
                 include_once('config/kategori/tampil.php');
             }else if($page=='kota'){
                 include_once('content/data_kota.php');
-            }else if($page=='kurir'){
-                include_once('content/data_kurir.php');
             }else if($page=='pesanan'){
                 include_once('content/pesanan.php');
             }else if($page=='pembayaran'){

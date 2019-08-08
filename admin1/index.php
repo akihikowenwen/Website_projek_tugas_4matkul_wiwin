@@ -23,7 +23,7 @@
 <body class="a">
     <Section header>
 
-    <nav class="nav navbar-expand-lg navbar-light  justify-content-center" style="background-color:rgb(226, 226, 226)">
+    <nav class="nav navbar-expand-lg   justify-content-center " style="background-color:rgb(226, 226, 226)">
                     <ul class="nav justify-content-center">
                     <a class="navbar-brand nav_" href="index.php?page=home.php">Dasboard</a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
