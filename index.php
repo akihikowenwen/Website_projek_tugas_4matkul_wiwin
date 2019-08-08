@@ -58,22 +58,13 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav nav_ mr-auto">
-                                <!-- <a href="index.php?page=home" class="nav-link  <?php if($page==='home'){echo 'active';} ?>">Home</a> -->
+                                <a href="index.php?page=home" class="nav-link  <?php if($page==='home'){echo 'active';} ?>">Home</a>
                                 <a href="index.php?page=daftar_buku" class="nav-link   <?php if($page==='daftar_buku'){echo 'active';} ?>">Daftar Buku</a>
-                                <!-- <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Dropdown
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                    </div>
-                                </li> -->
-                                <a href="index.php?page=tentang" class="nav-link <?php if($page==='tentang'){echo 'active';} ?>">Tentang Kami</a>
-                                <a href="index.php?page=pembayaran" class="nav-link <?php if($page==='pembayaran'){echo 'active';} ?>">Info Pembayaran</a>
-                                <a href="index.php?page=pembayaran" class="nav-link <?php if($page==='pembayaran'){echo 'active';} ?>">Login</a>
+                                <a href="index.php?page=tentang" class="nav-link <?php if($page==='toko'){echo 'active';} ?>">Tentang Kami</a>
+                                <a href="index.php?page=info_bayar" class="nav-link <?php if($page==='info_bayar'){echo 'active';} ?>">Info Pembayaran</a>
+                                <a href="index.php?page=blog" class="nav-link <?php if($page==='blog'){echo 'active';} ?>">Blog</a>
+                                <a href="index.php?page=kontak" class="nav-link <?php if($page==='kontak'){echo 'active';} ?>">Kontak Kami</a>
+                                <a href="index.php?page=pembayaran" class="nav-link <?php if($page==='login'){echo 'active';} ?>">Login</a>
                             </ul>
                         </div>
                     </ul>
@@ -83,12 +74,22 @@
     </div>
 
         <section id="content" style="background-color:  rgb(255, 255, 255);">
-        <?php 
+        <?php //header
             if($page == 'home') {
                 include_once('content/home.php');
+            }else if($page =='daftar_buku'){
+                include_once('content/shop.php');
+            }else if($page=='toko'){
+                include_once('content/tentang_toko.php');
+            }else if($page=='info_bayar'){
+                include_once('content/info_pembayaran.php');
             }else if($page=='blog'){
                 include_once('content/blog.php');
+            }else if($page=='kontak'){
+                include_once('content/kontak_kami.php');
+                //header
                 //footer
+            
             }else if($page=='bantuan'){
                 include_once('content/bantuan.php');
             }else if($page=='belanja'){
@@ -99,9 +100,8 @@
                 include_once('content/pengiriman.php');
             }else if($page=='tentang'){
                 include_once('content/tentang.php');
-            }else if($page=='toko'){
-                include_once('content/tentang_toko.php');
-            }else IF($page=='syarat'){
+            
+            }else If($page=='syarat'){
                 include_once('content/syarat_ketentuan.php');
             }else if($page=='bantuan'){
                 include_once('content/bantuan.php');
@@ -126,7 +126,7 @@
     <div class="justify-content-center pt-5 pb-5 bg-dark text-light">
         <div class="row batas_tepi">
             <!-- Belanja -->
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <div class="row">
                     <div class="col">
                         <h5>Belanja</h5>
@@ -138,7 +138,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <!-- <div class="col-md-3">
                 <div class="row">
                     <div class="col">
                         <h5>Tentang Toko</h5>
@@ -149,8 +149,8 @@
                         <p><a href="index.php?page=blog" style="text-decoration: none; color: white;"><i class="fa fa-chevron-right" aria-hidden="true"></i> Blog</a></p>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3">
+            </div> -->
+            <div class="col-md-4">
                 <div class="row">
                     <div class="col">
                         <h5>Lainnya</h5>
@@ -162,7 +162,7 @@
                     </div>
                 </div> 
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <div class="row">
                     <div class="col">
                         <h5>Pembayaran</h5>
