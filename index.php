@@ -60,14 +60,20 @@
                             <a href="index.php?page=daftar_buku" class="nav-link   <?php if($page==='daftar_buku'){echo 'active';} ?>">Daftar Buku</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="|" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Kategori
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
+                                <a class="dropdown-item" href="<?php
+          $p = mysqli_query($connect,"SELECT * FROM tb_kategori");
+          while($s = mysqli_fetch_array($p)){
+        ?>
+          <option value="<?php echo $s['nama_kategori']; ?>"><?php echo $s['nama_kategori']; ?></option>
+        <?php
+        echo $s['nama_kategori'];
+          }
+        ?>"></a>
+                               
                             </div>
                         </li>
                         <li class="nav-item">
