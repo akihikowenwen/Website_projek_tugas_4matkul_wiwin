@@ -1,5 +1,5 @@
 <section class="slide mb-2">
-<div class="row">
+<div class="row" >
         <div class="col">
             <!-- carousel start -->
                 <div id="carouselExampleIndicators" class="carousel slide h-100 " data-ride="carousel">
@@ -29,7 +29,7 @@
         </div>
 </section>
 <!-- Buku terbaru -->
-<div class="py-5 bg-light">
+<div class="py-5 ">
     <h1 class="text-center mb-5">Buku Terbaru</h1>
     <div class="owl-carousel owl-two owl-theme">
             <?php 
@@ -66,7 +66,7 @@
 </div>
 
 
-<div class="py-5 bg-light-gray">
+<div class="container bg-light-gray">
     <h1 class="text-center mb-5">Buku Terlaris</h1>
     <div class="owl-carousel owl-two owl-theme">
         <?php 

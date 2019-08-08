@@ -9,7 +9,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Contoh Include</title>
+    <title>Web Toko Buku</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -22,11 +22,10 @@
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body style="background-color:rgb(189, 189, 189)">
-    <div class="container-fluid px-0" style="background-color:white;">
+<body style="background-color:white">
+    <div class="container-fluid px-0" style="background-color:rgba(255, 255, 255, 0.322);">
         <div class="row">
             <div class="col">
-                <!-- navigasi bar goes here -->
                 <div class="container-fluid">
                     <div class="row batas_tepi">
                         <div class="col-md-9">
@@ -35,97 +34,46 @@
                                 <button class="btn btn-outline-success my-2 my-sm-0" style="border-radius: 20px; height:45px;" type="submit">Search</button>
                             </form>
                         </div>
-                        <div class="col-md-3">
-                            <div class="row h-100"> 
-                                <div class="col">
-                                    <ul class="nav w-100 justify-content-end">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="index.php?page=daftar">Daftar</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="index.php?page=masuk">Masuk</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">My Account</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="w-100"></div>
-                                <div class="col  text-right ">
-                                    <button class="btn btn-danger">
-                                        <div class="col "> 
-                                        <i class="fa fa-cart-plus" aria-hidden="true"></i> 
-                                        My Cart - Rp. 0.00
-                                        </div>
-                                    </button>
-                                </div>
-                            </div>
+                        <div class="col form-inline  my-2 my-lg-0 text-right ">
+                            <button class="btn btn-danger">                                        
+                                Login     
+                            </button>
                         </div>
                     </div>
                 </div>
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbarss</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li> 
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+            </div>
         </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
-                <!-- <nav class="nav navbar-expand-lg navbar-light justify-content-center" style="background-color:rgb(226, 226, 226)">
+            
+                <nav class="nav navbar-expand-lg navbar-light justify-content-center" style="background-color:rgba(72, 151, 216, 0.664);">
                     <ul class="nav justify-content-center">
-                    <a class="navbar-brand nav_" href="index.php?page=home.php">Home</a>
+                    <a class="navbar-brand " href="index.php?page=home.php">Home</a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav nav_ mr-auto">
-                                <a href="index.php?page=komputer" class="nav-link  <?php if($page==='komputer'){echo 'active';} ?>">Komputer</a>
-                                <a href="index.php?page=crud&&action=show" class="nav-link  <?php if($page==='crud'){echo 'active';} ?>">CRUD</a>
-                                <a href="index.php?page=kesehatan" class="nav-link   <?php if($page==='kesehatan'){echo 'active';} ?>">Kesehatan</a>
-                                <a href="index.php?page=komik" class="nav-link <?php if($page==='komik'){echo 'active';} ?>">Komik</a>
-                                <a href="index.php?page=novels" class="nav-link <?php if($page==='novels'){echo 'active';} ?>">Novels</a>
-                                <a href="index.php?page=majalah" class="nav-link  <?php if($page==='majalah'){echo 'active';} ?>">Majalah</a>
-                                <a href="index.php?page=kamus" class="nav-link   <?php if($page==='kamus'){echo 'active';} ?>">Kamus</a>
-                                <a href="index.php?page=ekonomi" class="nav-link <?php if($page==='ekonomi'){echo 'active';} ?>">Ekonomi</a>
-                                <a href="index.php?page=memasak" class="nav-link <?php if($page==='memasak'){echo 'active';} ?>">Memasak</a>
-                                <a href="index.php?page=bisnis" class="nav-link   <?php if($page==='bisnis'){echo 'active';} ?>">Bisnis</a>
-                                <a href="index.php?page=lainnya" class="nav-link   <?php if($page==='lainnya'){echo 'active';} ?>">Lainnya</a>
+                                <!-- <a href="index.php?page=home" class="nav-link  <?php if($page==='home'){echo 'active';} ?>">Home</a> -->
+                                <a href="index.php?page=daftar_buku" class="nav-link   <?php if($page==='daftar_buku'){echo 'active';} ?>">Daftar Buku</a>
+                                <a href="index.php?page=tentang" class="nav-link <?php if($page==='tentang'){echo 'active';} ?>">Tentang Kami</a>
+                                <a href="index.php?page=pembayaran" class="nav-link <?php if($page==='pembayaran'){echo 'active';} ?>">Info Pembayaran</a>
+                                <a href="">Login</a>
                             </ul>
                         </div>
                     </ul>
-                </nav> -->
+                </nav>
             </div>
         </div>
     </div>
 
-    <section id="content" class="px-5">
+    <div class="row">
+        <div class="col-md-9">
+
+        </div>
+        <div class="col-md-9">
+            
+        </div>
+    </div>
+        <section id="content" class="px-5" style="background-color:  rgb(255, 255, 255);">
         <?php 
             if($page == 'komputer') {
                 include_once('content/categori.php');
@@ -161,6 +109,9 @@
             }
         ?>
     </section>
+        
+
+    
 
     <div class="justify-content-center pt-5 pb-5 bg-dark text-light">
         <div class="row batas_tepi">

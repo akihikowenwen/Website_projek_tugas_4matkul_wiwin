@@ -1,40 +1,49 @@
-<html>
-<head>
-  <title>Aplikasi CRUD Plus Upload Gambar dengan PHP</title>
-</head>
-<body>
-  <h1>Data Siswa</h1>
-  <a href="form_simpan.php">Tambah Data</a><br><br>
-  <table border="1" width="100%">
-  <tr>
-    <th>Foto</th>
-    <th>NIS</th>
-    <th>Nama</th>
-    <th>Jenis Kelamin</th>
-    <th>Telepon</th>
-    <th>Alamat</th>
-    <th colspan="2">Aksi</th>
-  </tr>
-  <?php
-  // Load file koneksi.php
-  include "koneksi.php";
+<div class="container">
+<h1>Daftar Buku</h1>
+<a href="index.php?page=tambah_buku">Tambah Data</a><br><br>
+
+
+  <table class="table table-striped table-hove text-center">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Foto</th>
+      <th scope="col">judul Buku</th>
+      <th scope="col">Harga</th>
+      <th scope="col">Jumlah</th>
+      <th scope="col">kategori</th>
+      <th scope="col">Penulis</th>
+      <th scope="col">Penerbit</th>
+      <th scope="col">Deskrisi</th>
+      <th scope="col">Action</th>
+
+    </tr>
   
-  $query = "SELECT * FROM siswa"; // Query untuk menampilkan semua data siswa
-  $sql = mysqli_query($connect, $query); // Eksekusi/Jalankan query dari variabel $query
-  
-  while($data = mysqli_fetch_array($sql)){ // Ambil semua data dari hasil eksekusi $sql
-    echo "<tr>";
-    echo "<td><img src='images/".$data['foto']."' width='100' height='100'></td>";
-    echo "<td>".$data['nis']."</td>";
-    echo "<td>".$data['nama']."</td>";
-    echo "<td>".$data['jenis_kelamin']."</td>";
-    echo "<td>".$data['telp']."</td>";
-    echo "<td>".$data['alamat']."</td>";
-    echo "<td><a href='proses_ubah.php?nis=".$data['nis']."'>Ubah</a></td>";
-    echo "<td><a href='proses_hapus.php?nis=".$data['nis']."'>Hapus</a></td>";
-    echo "</tr>";
-  }
+   <!-- Load file koneksi.php -->
+  <?php 
+    $query = "SELECT * FROM tb_buku"; // Query untuk menampilkan semua data siswa
+    $sql = mysqli_query($connect, $query); // Eksekusi/Jalankan query dari variabel $query
+    $no = 1;
+    while($data = mysqli_fetch_array($sql)){ // Ambil semua data dari hasil eksekusi $sql
   ?>
-  </table>
-</body>
-</html>
+      <th scope="row"><?php echo $no; ?></th>
+      <td>
+      <img src="./../img_buku/<?php echo $data['foto']?>" alt="" class="img-thumbnail" style="max-width:75px; max-height:150px">
+      </td>
+      <td><?php echo $data['judul_buku'] ?></td>
+      <td><?php echo $data['harga'] ?></td>
+      <td><?php echo $data['jml'] ?></td>
+      <td><?php echo $data['id_kategori'] ?></td>
+      <td><?php echo $data['penulis'] ?></td>
+      <td><?php echo $data['penerbit'] ?></td>
+      <td><?php echo $data['deskripsi'] ?></td>
+      <td>
+      <a href='proses_ubah.php?nis=".$data['id-buku']."'>
+      <a class="btn btn-sm btn-success" href="index.php?u=n&page=edit&id=<?php echo $data['id_buku'] ?>">Edit</a>
+	    <a class="btn btn-sm btn-danger" href="index.php?page=delete&id=<?php echo $data['id_buku']?>">Delete</a>
+      </td>
+    </tr>
+  <?php 
+$no++;
+}?>
+    </table>
+</div>
