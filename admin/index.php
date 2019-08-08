@@ -108,6 +108,18 @@
             }else if($page=='delete'){
                 include_once('config/buku/proses_hapus.php');
                  //end buku
+                 //user
+            }else if($page=='user'){
+                include_once('config/user/tampil.php');
+            }else if($page=='tambah_buku'){
+                include_once('config/user/form_simpan.php');
+            }else if($page=='simpan'){
+                include_once('config/user/proses_simpan.php');
+            }else if($page=='edit'){
+                include_once('config/user/proses_ubah.php');
+            }else if($page=='delete'){
+                include_once('config/user/proses_hapus.php');
+                 //end user
             }else if($page=='kategori'){
                 include_once('config/kategori/tampil.php');
             }else if($page=='kota'){

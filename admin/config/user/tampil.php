@@ -1,19 +1,15 @@
 <div class="container">
-<h1>Daftar Buku</h1>
-<a href="index.php?page=tambah_buku">Tambah Data</a><br><br>
+<h1>Daftar User</h1>
+<a href="index.php?page=tambah_buku">Tambah Data </a><br><br>
 
 
   <table class="table table-striped table-hove text-center">
     <tr>
       <th scope="col">#</th>
-      <th scope="col">Foto</th>
-      <th scope="col">judul Buku</th>
-      <th scope="col">Harga</th>
-      <th scope="col">Jumlah</th>
-      <th scope="col">kategori</th>
-      <th scope="col">Penulis</th>
-      <th scope="col">Penerbit</th>
-      <th scope="col">Deskrisi</th>
+      <th scope="col">Nama</th>
+      <th scope="col">Email</th>
+      <th scope="col">Alamat</th>
+      <th scope="col">Status</th>
       <th scope="col">Action</th>
 
     </tr>
@@ -26,12 +22,12 @@
     while($data = mysqli_fetch_array($sql)){ // Ambil semua data dari hasil eksekusi $sql
   ?>
       <th scope="row"><?php echo $no; ?></th>
-      <td>
+      <!-- <td>
       <img src="./../img_buku/<?php echo $data['foto']?>" alt="" class="img-thumbnail" style="max-width:75px; max-height:150px">
-      </td>
-      <td><?php echo $data['judul_buku'] ?></td>
-      <td><?php echo $data['harga'] ?></td>
-      <td><?php echo $data['jml'] ?></td>
+      </td> -->
+      <td><?php echo $data['nama_user'] ?></td>
+      <td><?php echo $data['email_usser'] ?></td>
+      <td><?php echo $data['Alamat'] ?></td>
       <td><?php echo $data['id_kategori'] ?></td>
       <td><?php echo $data['penulis'] ?></td>
       <td><?php echo $data['penerbit'] ?></td>

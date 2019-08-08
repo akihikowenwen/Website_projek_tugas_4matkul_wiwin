@@ -53,10 +53,10 @@
                     <h5><?php echo $data['judul_buku'] ?></h5>
                     <p style="font-size:18px">Harga :<?php echo number_format($data['harga'], 2, ',', '.') ?></p>
                     <div class="position-absolute" style="bottom:0;">
-                        <a href="<?php echo $url; ?>menu.php?id=<?php echo $data['id_buku'] ?>" class="btn btn-success btn-sm" style="width:100px;" href="#" role="button">
+                        <a href="<?php echo $url; ?>*menu.php?id=<?php echo $data['id_buku'] ?>" class="btn btn-success btn-sm" style="width:100px;" href="#" role="button">
                             Lihat Detail
                         </a>
-                        <a href="<?php echo $url; ?>keranjang.php?act=beli&&produk_id=<?php echo $data['id_buku'] ?>" class="btn btn-info btn-sm" style="width:100px;" href="#" role="button">
+                        <a href="<?php echo $url; ?>*keranjang.php?act=beli&&produk_id=<?php echo $data['id_buku'] ?>" class="btn btn-info btn-sm" style="width:100px;" href="#" role="button">
                             Pesan
                         </a>
                     </div>
@@ -68,13 +68,11 @@
 </div>
 
 
-<<<<<<< HEAD
 <div class="">
     <h1 class="text-center">Buku Terlaris</h1>
-=======
+
 <div class="container">
     <h1 class="text-center mb-5">Buku Terlaris</h1>
->>>>>>> 421eb489ebb529f46753d60523e37a3c70e26b83
     <div class="owl-carousel owl-two owl-theme">
         <?php 
             $query = "SELECT * FROM tb_buku "; // Query untuk menampilkan semua data siswa

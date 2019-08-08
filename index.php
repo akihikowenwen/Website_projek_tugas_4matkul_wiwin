@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body >
+<body  class="a">
     <div class="container-fluid px-0" style="background-color:rgba(255, 255, 255, 0.322);">
         <div class="row">
             <div class="col">
@@ -34,17 +34,23 @@
                                 <button class="btn btn-outline-success my-2 my-sm-0" style="border-radius: 20px; height:45px;" type="submit">Search</button>
                             </form>
                         </div>
-                        <div class="col form-inline  my-2 my-lg-0 text-right ">
-                            <button class="btn btn-danger">                                        
-                                Login     
-                            </button>
+                        <div class="col-md-3  text-center">
+                            <div class="card bg-light mb-3" style="max-width: 150px;">
+                                <div class="card-header a">My Chart</div>
+                                <div class="card-body">
+                                    <p class="card-text">Rp. </p>
+                                </div>
+                            </div>
+                            <!-- <button class="btn form-control" style="height:80px;" >                                        
+                                My Chart     
+                            </button> -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
             
-                <nav class="nav navbar-expand-lg navbar-light justify-content-center" style="background-color:rgba(72, 151, 216, 0.664);">
+                <nav class="nav navbar-expand-lg navbar-light justify-content-center a" >
                     <ul class="nav justify-content-center">
                     <a class="navbar-brand " href="index.php?page=home.php">Home</a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,9 +60,20 @@
                             <ul class="navbar-nav nav_ mr-auto">
                                 <!-- <a href="index.php?page=home" class="nav-link  <?php if($page==='home'){echo 'active';} ?>">Home</a> -->
                                 <a href="index.php?page=daftar_buku" class="nav-link   <?php if($page==='daftar_buku'){echo 'active';} ?>">Daftar Buku</a>
+                                <!-- <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dropdown
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li> -->
                                 <a href="index.php?page=tentang" class="nav-link <?php if($page==='tentang'){echo 'active';} ?>">Tentang Kami</a>
                                 <a href="index.php?page=pembayaran" class="nav-link <?php if($page==='pembayaran'){echo 'active';} ?>">Info Pembayaran</a>
-                                <a href="">Login</a>
+                                <a href="index.php?page=pembayaran" class="nav-link <?php if($page==='pembayaran'){echo 'active';} ?>">Login</a>
                             </ul>
                         </div>
                     </ul>
