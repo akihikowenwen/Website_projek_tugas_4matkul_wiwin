@@ -65,15 +65,7 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-md-9">
-
-        </div>
-        <div class="col-md-9">
-            
-        </div>
-    </div>
-        <section id="content" class="px-5" style="background-color:  rgb(255, 255, 255);">
+        <section id="content" style="background-color:  rgb(255, 255, 255);">
         <?php 
             if($page == 'komputer') {
                 include_once('content/categori.php');

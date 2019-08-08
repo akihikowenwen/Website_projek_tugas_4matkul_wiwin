@@ -28,6 +28,8 @@
             <!-- carousel end -->
         </div>
 </section>
+
+
 <!-- Buku terbaru -->
 <div class="py-5 ">
     <h1 class="text-center mb-5">Buku Terbaru</h1>
@@ -66,8 +68,8 @@
 </div>
 
 
-<div class="container bg-light-gray">
-    <h1 class="text-center mb-5">Buku Terlaris</h1>
+<div class="">
+    <h1 class="text-center">Buku Terlaris</h1>
     <div class="owl-carousel owl-two owl-theme">
         <?php 
             $query = "SELECT * FROM tb_buku "; // Query untuk menampilkan semua data siswa
