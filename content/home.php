@@ -66,7 +66,7 @@
 </div>
 
 
-<div class="container bg-light-gray">
+<div class="container">
     <h1 class="text-center mb-5">Buku Terlaris</h1>
     <div class="owl-carousel owl-two owl-theme">
         <?php 
@@ -102,7 +102,7 @@
         
     </div>
 </div>
-<div class="py-5 bg-light">
+<div class="py-5">
     <h1 class="text-center">Blog</h1>
     <div class="owl-carousel owl-two owl-theme">
         <?php 

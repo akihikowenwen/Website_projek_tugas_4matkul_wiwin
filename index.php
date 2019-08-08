@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body style="background-color:white">
+<body >
     <div class="container-fluid px-0" style="background-color:rgba(255, 255, 255, 0.322);">
         <div class="row">
             <div class="col">
@@ -75,10 +75,11 @@
     </div>
         <section id="content" class="px-5" style="background-color:  rgb(255, 255, 255);">
         <?php 
-            if($page == 'komputer') {
-                include_once('content/categori.php');
+            if($page == 'home') {
+                include_once('content/home.php');
             }else if($page=='blog'){
                 include_once('content/blog.php');
+                //footer
             }else if($page=='bantuan'){
                 include_once('content/bantuan.php');
             }else if($page=='belanja'){
