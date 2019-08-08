@@ -113,16 +113,16 @@ input:focus,input:hover{background: rgba(0, 234, 255, 0.212);}
 
 /* css display blog */
 /* test */
-.nav_ a{
+/* .nav_ a{
   color: rgb(255, 255, 255);
   text-decoration: none;
   border-radius: 3px;
 }
 
 .nav_ a:hover{ 
-  background-color:  rgba(0, 47, 255, 0.26););
+  background-color:  rgba(0, 47, 255, 0.26);
 }
 
 .nav_ .active{
   background-color:   rgba(0, 0, 255, 0.192);;
-}
+} */

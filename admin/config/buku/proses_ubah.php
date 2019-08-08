@@ -34,7 +34,7 @@
   <tr>
     <td>Kategori</td>
     <td>
-    <label for="inputState">Kategori</label>
+ 
       <select id="inputState" name="kategori" class="form-control">
         <option value="">PILIH KATEGORI</option>
         <?php

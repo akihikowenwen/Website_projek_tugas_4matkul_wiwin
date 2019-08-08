@@ -12,7 +12,7 @@ include "./../config/conn.php";
   <tr>
     <td>Kategori</td>
     <td>
-      <label for="inputState">Kategori</label>
+
       <select id="inputState" class="form-control">
         <?php
           $p = mysqli_query($connect,"SELECT * FROM tb_kategori");

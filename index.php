@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body  class="a">
+<body class="a">
     <div class="container-fluid px-0" style="background-color:rgba(255, 255, 255, 0.322);">
         <div class="row">
             <div class="col">
@@ -49,28 +49,46 @@
                 </div>
             </div>
         </div>
-            
-                <nav class="nav navbar-expand-lg navbar-light justify-content-center a" >
-                    <ul class="nav justify-content-center">
-                    <a class="navbar-brand " href="index.php?page=home.php">Home</a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav nav_ mr-auto">
-                                <a href="index.php?page=home" class="nav-link  <?php if($page==='home'){echo 'active';} ?>">Home</a>
-                                <a href="index.php?page=daftar_buku" class="nav-link   <?php if($page==='daftar_buku'){echo 'active';} ?>">Daftar Buku</a>
-                                <a href="index.php?page=tentang" class="nav-link <?php if($page==='toko'){echo 'active';} ?>">Tentang Kami</a>
-                                <a href="index.php?page=info_bayar" class="nav-link <?php if($page==='info_bayar'){echo 'active';} ?>">Info Pembayaran</a>
-                                <a href="index.php?page=blog" class="nav-link <?php if($page==='blog'){echo 'active';} ?>">Blog</a>
-                                <a href="index.php?page=kontak" class="nav-link <?php if($page==='kontak'){echo 'active';} ?>">Kontak Kami</a>
-                                <a href="index.php?page=pembayaran" class="nav-link <?php if($page==='login'){echo 'active';} ?>">Login</a>
-                            </ul>
-                        </div>
+        <nav class="nav navbar-expand-lg navbar-light justify-content-center a" >
+            <ul class="nav justify-content-center">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav_ mr-auto">
+                        <li class="nav-item">
+                            <a href="index.php?page=home" class="nav-link  <?php if($page==='home'){echo 'active';} ?>">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.php?page=daftar_buku" class="nav-link   <?php if($page==='daftar_buku'){echo 'active';} ?>">Daftar Buku</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="|" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Kategori
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.php?page=tentang" class="nav-link <?php if($page==='toko'){echo 'active';} ?>">Tentang Kami</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.php?page=info_bayar" class="nav-link <?php if($page==='info_bayar'){echo 'active';} ?>">Info Pembayaran</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.php?page=blog" class="nav-link <?php if($page==='blog'){echo 'active';} ?>">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.php?page=kontak" class="nav-link <?php if($page==='kontak'){echo 'active';} ?>">Kontak Kami</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.php?page=pembayaran" class="nav-link <?php if($page==='login'){echo 'active';} ?>">Login</a>
+                        </li>
                     </ul>
-                </nav>
-            </div>
-        </div>
+                </div>
+            </ul>
+        </nav>
     </div>
 
         <section id="content" style="background-color:  rgb(255, 255, 255);">

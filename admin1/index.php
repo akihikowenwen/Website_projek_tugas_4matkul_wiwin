@@ -33,13 +33,11 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav nav_ mr-auto">             
                             <a href="index.php?page=data" class="nav-link   <?php if($page==='data'){echo 'active';} ?>">Master Data</a>
-            <a href="index.php?page=laporan" class="nav-link <?php if($page==='laporan'){echo 'active';} ?>">Laporan</a>
-            <a href="index.php?page=pesanan" class="nav-link <?php if($page==='pesanan'){echo 'active';} ?>">Pesanan</a>
-            <a href="index.php?page=pembayaran" class="nav-link  <?php if($page==='pembayaran'){echo 'active';} ?>">Pembayaran</a>
-            <a href="index.php?page=kontak" class="nav-link   <?php if($page==='kontak'){echo 'active';} ?>">Kontak</a>
-            <a href="index.php?page=logout" class="nav-link <?php if($page==='logout'){echo 'active';} ?>">Logout</a>
-       
-                                
+                            <a href="index.php?page=laporan" class="nav-link <?php if($page==='laporan'){echo 'active';} ?>">Laporan</a>
+                            <a href="index.php?page=pesanan" class="nav-link <?php if($page==='pesanan'){echo 'active';} ?>">Pesanan</a>
+                            <a href="index.php?page=pembayaran" class="nav-link  <?php if($page==='pembayaran'){echo 'active';} ?>">Pembayaran</a>
+                            <a href="index.php?page=kontak" class="nav-link   <?php if($page==='kontak'){echo 'active';} ?>">Kontak</a>
+                            <a href="index.php?page=logout" class="nav-link <?php if($page==='logout'){echo 'active';} ?>">Logout</a>      
                             </ul>
                         </div>
                     </ul>
